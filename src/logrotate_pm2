@@ -1,0 +1,9 @@
+{
+        rotate 12
+        weekly
+        missingok
+        notifempty
+        compress
+        delaycompress
+        create 0640 user user
+}

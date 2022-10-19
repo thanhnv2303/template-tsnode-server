@@ -1,0 +1,4 @@
+.env
+../swagger_output.json
+temp
+secret

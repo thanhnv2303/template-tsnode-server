@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Documentation Class: IvirseIntegrationOwner</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cerulean.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top ">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">Documentation</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="IvirseIntegrationBuyer.html">IvirseIntegrationBuyer</a></li><li><a href="IvirseIntegrationOwner.html">IvirseIntegrationOwner</a></li><li><a href="PatientDataModel.html">PatientDataModel</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#checkMigrating">checkMigrating</a></li><li><a href="global.html#default">default</a></li><li><a href="global.html#fetchUser">fetchUser</a></li><li><a href="global.html#fetchUserByAddress">fetchUserByAddress</a></li><li><a href="global.html#fetchUserWithPrivateKey">fetchUserWithPrivateKey</a></li><li><a href="global.html#genAuthSignature">genAuthSignature</a></li><li><a href="global.html#getErrorMessage">getErrorMessage</a></li><li><a href="global.html#getHttpStatusCode">getHttpStatusCode</a></li><li><a href="global.html#isErrorStatusCode">isErrorStatusCode</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#logErrorMessage">logErrorMessage</a></li><li><a href="global.html#mergeDeep">mergeDeep</a></li><li><a href="global.html#RDMnemonic">RDMnemonic</a></li><li><a href="global.html#updateMigrateStatus">updateMigrateStatus</a></li><li><a href="global.html#verifyAuthSignature">verifyAuthSignature</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: IvirseIntegrationOwner</h1>
+<section>
+
+<header>
+    
+        <h2>
+        IvirseIntegrationOwner
+        </h2>
+        
+            <div class="class-description"><p>Class for user as Owner.
+Extend ReactiveOwner from core services. Check ReactiveOwner docs for more information</p></div>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="IvirseIntegrationOwner"><span class="type-signature"></span>new IvirseIntegrationOwner(signer, storageService, verifyService, blockchainService, userToken, serverUrl)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Create new IvirseIntegrationOwner Instance</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>signer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ethers.Signer</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Signer instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>storageService</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">IvirseStorageServices</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>IvirseStorageServices instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>verifyService</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">IvirseVerifyServices</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>IvirseVerifyServices instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>blockchainService</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">IvirseBlockchainServices</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>DataSharingBlockchainServices instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userToken</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User access token.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serverUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Integration Server URL.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">
+let provider = new ethers.providers.Web3Provider(window.ethereum, &quot;any&quot;);
+await provider.send(&quot;eth_requestAccounts&quot;, []);
+const ownerSigner = provider.getSigner();
+
+let owner = await IvirseIntegrationOwner.init(ownerSigner,
+        [rootCertificatePem],
+        ownerStorageConfig,
+        reactiveContractAddress,
+        marketplaceContractAddress,
+        userToken,
+        serverUrl
+    );</pre>
+
+
+    
+</dd>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>ReactiveOwner</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id=".init"><span class="type-signature">&lt;async, static> </span>init(signer, rootCertificatePems, storageConfig, sharingContractAddress, marketContractAdress, userToken, serverUrl)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Returns new IvirseIntegrationOwner Instance</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>signer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">ethers.Signer</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Ethers js Signer instance.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>rootCertificatePems</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Array of Pem formatted certificates.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>storageConfig</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">StorageConfig</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Object representing the storage configuration.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sharingContractAddress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Sharing Data Contract address.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>marketContractAdress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Marketplace Contract address.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userToken</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User access token.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>serverUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Integration Server URL.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>new IvirseIntegrationOwner instance.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="IvirseIntegrationOwner.html">IvirseIntegrationOwner</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getMigratedData"><span class="type-signature">&lt;async> </span>getMigratedData()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>call integration server to get all migrated data
+require user token</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#MigratedData">MigratedData</a>>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="getMigratedDataBySignature"><span class="type-signature">&lt;async> </span>getMigratedDataBySignature()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>call integration server to get all migrated data buy owner signature
+require request signature from user</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#MigratedData">MigratedData</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="migrateData"><span class="type-signature">&lt;async> </span>migrateData()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>call integration server to migrate new data of user</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">
+let result = {message: &#x27;Migrating&#x27;}</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="register"><span class="type-signature">&lt;async> </span>register()</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Register publick key to encrypt and address to integration server.
+Require new JWT login token to access api.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+    <pre class="sunlight-highlight-javascript">
+let result = {message: &#x27;success&#x27;}</pre>
+
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="updateUserToken"><span class="type-signature"></span>updateUserToken(userToken)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Update new JWT token to access integration server</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userToken</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="waitAllDataMigrated"><span class="type-signature">&lt;async> </span>waitAllDataMigrated(timeout, awaitToRecheck)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Wait to get all data migrated and get value</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>timeout</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    60
+                
+                </td>
+            
+
+            <td class="description last"><p>time to return (seconds);</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>awaitToRecheck</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last"><p>time to recheck (seconds);</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;<a href="global.html#MigratedData">MigratedData</a>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+	
+		on August 20th 2022, 11:00:19 am
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>
