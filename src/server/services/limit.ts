@@ -13,8 +13,8 @@ export function setLimiter(app) {
 }
 
 export function setLimitBody(app) {
-  app.use(express.json({ limit: '50mb' }));
-  app.use(express.urlencoded({ limit: '50mb', extended: false }));
+  // app.use(express.json({ limit: '50mb' }));
+  app.use(express.urlencoded(Config.app.urlencoded));
 }
 
 export function setHelmet(app) {
